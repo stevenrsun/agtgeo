@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch, Link, NavLink} from "react-router-dom";
-import {Navbar, Nav} from 'react-bootstrap';
 import logo from './images/logo.png';
 import navbar_top from './images/navbar_top.png';
 import {Home} from './pages/home.js';
+import {News} from './pages/news.js';
 import './App.css';
 
 class NavBar extends Component {
@@ -31,7 +31,7 @@ class NavBar extends Component {
               <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className="navbar-nav ml-auto list-unstyled mt-5">
                   <li><NavLink to={'/News'} className="nav-link" style={this.styles.link}>News</NavLink></li>
-                  <li><NavLink to={'/Projects'} className="nav-link" style={this.styles.link}>Projects</NavLink></li>
+                  <li><NavLink to={'/Services'} className="nav-link" style={this.styles.link}>Services</NavLink></li>
                   <li><NavLink to={'/Technologies'} className="nav-link" style={this.styles.link}>Technologies</NavLink></li>
                   <li><NavLink to={'/About'} className="nav-link" style={this.styles.link}>About</NavLink></li>
                   <li><NavLink to={'/Contact'} className="nav-link" style={this.styles.link}>Contact</NavLink></li>
@@ -41,7 +41,8 @@ class NavBar extends Component {
           </nav>
           <hr className="mt-0"/>
           <Switch>
-            <Route path='/' component={Home}/>
+            <Route exact path='/' component={Home}/>
+            <Route exact path='/News' component={News}/>
           </Switch>
         </div>
       </Router>

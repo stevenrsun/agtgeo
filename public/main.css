@@ -1,0 +1,8 @@
+.active a{
+	background: red !important;
+	border: red
+}
+
+.pagination a{
+	color: red
+}
