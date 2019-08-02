@@ -4,6 +4,9 @@ import logo from './images/logo.png';
 import navbar_top from './images/navbar_top.png';
 import {Home} from './pages/home.js';
 import {News} from './pages/news.js';
+import {Services} from './pages/services.js';
+import {NewsPage} from './pages/newsPage.js';
+import {ServicePage} from './pages/servicePage.js';
 import './App.css';
 
 class NavBar extends Component {
@@ -41,8 +44,19 @@ class NavBar extends Component {
           </nav>
           <hr className="mt-0"/>
           <Switch>
+            <Route path='/address_sugarland' component={() => { 
+                window.location.href = 'https://goo.gl/maps/J9EKkRi5LgT2'; 
+                return null;
+            }}/>
+            <Route path='/address_beijing' component={() => { 
+                window.location.href = 'https://goo.gl/maps/909cp'; 
+                return null;
+            }}/>
             <Route exact path='/' component={Home}/>
             <Route exact path='/News' component={News}/>
+            <Route exact path='/Services' component={Services}/>
+            <Route exact path='/NewsPage' component={NewsPage}/>
+            <Route exact path='/ServicePage' component={ServicePage}/>
           </Switch>
         </div>
       </Router>
@@ -52,7 +66,9 @@ class NavBar extends Component {
 
 function App() {
   return (
+    <React.Fragment>
     <NavBar/>
+    </React.Fragment>
   );
 }
 

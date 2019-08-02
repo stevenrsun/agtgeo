@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import {NewsItem} from '../components/newsItem.js';
 import {PageNav} from '../components/pageNav.js';
 import {Link} from 'react-router-dom';
+import {Footer} from '../components/footer.js';
 
 export class News extends Component {
     state = { 
         news: [
+            {year: 2019, title: 'asdf', text: 'test'},
             {year: 2019, title: 'News Item 1', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
             {year: 2018, title: 'News Item 2 (2018)', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
             {year: 2017, title: 'News Item 3 (2017)', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
@@ -55,7 +57,7 @@ export class News extends Component {
         let i = this.state.page * this.state.numNewsItems;
         while(i<this.state.news.length && i<this.state.page*this.state.numNewsItems + 6){
             let dict = this.state.news[i];
-            newsJSX.push(<NewsItem title={dict['title']} text={dict['text']}/>)
+            newsJSX.push(<NewsItem info={dict}/>)
             i++;
         }
         return newsJSX;
@@ -98,18 +100,19 @@ export class News extends Component {
     render() { 
         var newsFormatted = this.formatNews();
         return ( 
-            <React.Fragment>
-            <div class="container">
+            <div style={{width: '70vw'}}>
+            <div class="container" style={{width: '100vw'}}>
                 <div class="row">
-                    <div class="col-4 border-right">
+                    <div class="col-2 border-right text-left">
                         <br/>
-                        <Link onClick={this.reset} style={{fontSize: 20, color: 'black'}}>All News</Link><br/>
+                        <Link onClick={this.reset} style={{fontSize: 20, fontWeight: 'bold', color: '#1cb7e6'}}>All News</Link><br/>
                         <Link onClick={() => this.applyFilter(2019)} style={{fontSize: 20, color: 'black'}}>2019-2020</Link><br/>
                         <Link onClick={() => this.applyFilter(2018)} style={{fontSize: 20, color: 'black'}}>2018-2019</Link><br/>
                         <Link onClick={() => this.applyFilter(2017)} style={{fontSize: 20, color: 'black'}}>2017-2018</Link><br/>
                         <Link onClick={() => this.applyFilter(2016)} style={{fontSize: 20, color: 'black'}}>2016-2017</Link><br/>
                     </div>
-                    <div class="col-8">
+                    <div class="col-lg">
+                        <h1 class="display-4 ml-2 mt-1" style={{fontSize: 35}}>LATEST NEWS</h1>
                         {newsFormatted}
                     </div>
                 </div>
@@ -123,7 +126,8 @@ export class News extends Component {
                         incrementPageTwice={this.incrementPageTwice}
                         lastPage={Math.ceil(this.state.news.length/this.state.numNewsItems)}/>
             </div>
-            </React.Fragment>
+            <Footer class="mt-5"/>
+            </div>
         );
     }
 }

@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 export class NewsItem extends Component {
     state = {  }
     render() { 
-        return (  
+        return ( 
             <div className="card border-light">
                 <div className="card-body">
-                    <h5 class="card-title" style={{color: 'red'}}>{this.props.title}</h5>
-                    <p class="card-text">{this.props.text}</p>
+                    <h5 class="card-title" style={{color: 'red'}}>{this.props.info['title']}</h5>
+                    <p class="card-text">{this.props.info['text']}</p>
+                    <Link to={{pathname: '/NewsPage', state:{info: this.props.info}}}>See more</Link>
                 </div>
             </div>
         );
