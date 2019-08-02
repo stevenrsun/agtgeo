@@ -25,3 +25,49 @@
 #root {
 	width: 100vw;
 }
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none !important;
+}
+
+.dropdown { padding-top: 1px !important;}
+
+.no-hover-underline .no-hover-underline:hover{
+	text-decoration: none !important;
+	color: grey;
+}
+
+.no-hover-underline {
+	color: #465057;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.heading {
+  font-family: 'Blinker', sans-serif;
+  font-weight: 700 !important;
+}
+
+.nav-text {
+  font-family: 'Blinker', sans-serif;
+	font-weight: 300;
+}
+
+.subheading {
+  font-weight: 300 !important;
+  font-family: 'Raleway', sans-serif;
+}
+
+.card-text {
+  font-family: 'Raleway', sans-serif;
+}
+
+.card-title {
+  font-family: 'Blinker', sans-serif;
+}
+
+
+

@@ -7,7 +7,7 @@ import {Footer} from '../components/footer.js';
 export class News extends Component {
     state = { 
         news: [
-            {year: 2019, title: 'asdf', text: 'test'},
+            {year: 2019, title: 'asdf', text: 'The recorded voice scratched in the speaker.'},
             {year: 2019, title: 'News Item 1', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
             {year: 2018, title: 'News Item 2 (2018)', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
             {year: 2017, title: 'News Item 3 (2017)', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
@@ -112,7 +112,7 @@ export class News extends Component {
                         <Link onClick={() => this.applyFilter(2016)} style={{fontSize: 20, color: 'black'}}>2016-2017</Link><br/>
                     </div>
                     <div class="col-lg">
-                        <h1 class="display-4 ml-2 mt-1" style={{fontSize: 35}}>LATEST NEWS</h1>
+                        <h1 class="heading ml-2 mt-1" style={{fontSize: 35, color: '#585c5e'}}>LATEST NEWS</h1>
                         {newsFormatted}
                     </div>
                 </div>

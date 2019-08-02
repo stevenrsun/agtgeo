@@ -101,6 +101,7 @@ export class Services extends Component {
                        Service Filter to be implemented
                     </div>
                     <div class="col-8">
+                        <h1 class="heading ml-2 mt-1" style={{fontSize: 35, color: '#585c5e'}}>OUR SERVICES</h1>
                         {serviceFormatted}
                     </div>
                 </div>

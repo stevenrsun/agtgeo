@@ -7,6 +7,7 @@ import {News} from './pages/news.js';
 import {Services} from './pages/services.js';
 import {NewsPage} from './pages/newsPage.js';
 import {ServicePage} from './pages/servicePage.js';
+import {Mission} from './pages/mission.js';
 import './App.css';
 
 class NavBar extends Component {
@@ -33,11 +34,22 @@ class NavBar extends Component {
               <br/><br/><br/>
               <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className="navbar-nav ml-auto list-unstyled mt-5">
-                  <li><NavLink to={'/News'} className="nav-link" style={this.styles.link}>News</NavLink></li>
-                  <li><NavLink to={'/Services'} className="nav-link" style={this.styles.link}>Services</NavLink></li>
-                  <li><NavLink to={'/Technologies'} className="nav-link" style={this.styles.link}>Technologies</NavLink></li>
-                  <li><NavLink to={'/About'} className="nav-link" style={this.styles.link}>About</NavLink></li>
-                  <li><NavLink to={'/Contact'} className="nav-link" style={this.styles.link}>Contact</NavLink></li>
+                  <li class="heading"><NavLink to={'/News'} className="nav-link" style={this.styles.link}>News</NavLink></li>
+                  <li class="heading"><NavLink to={'/Services'} className="nav-link" style={this.styles.link}>Services</NavLink></li>
+                  <li class="heading"><NavLink to={'/Technologies'} className="nav-link" style={this.styles.link}>Technologies</NavLink></li>
+                  <li class="heading"><div class="dropdown align-this-dropdown">
+                        <button class="btn btn-secondary dropdown-toggle heading" 
+                                style={{backgroundColor: 'white', color: 'grey', borderColor: 'white'}} type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          About
+                        </button>
+                        <div class="dropdown-menu pull-left" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item no-hover-underline" href="#" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/Mission'}>Our Mission</Link></a>
+                          <a class="dropdown-item no-hover-underline" href="#" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/Management'}>Management Team</Link></a>
+                          <a class="dropdown-item no-hover-underline" href="#" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/MarketsServed'}>Markets Served</Link></a>
+                          <a class="dropdown-item no-hover-underline" href="#" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/Partners'}>Partners</Link></a>
+                          <a class="dropdown-item no-hover-underline" href="#" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/WhyUs'}>Why AGT?</Link></a>                        </div>
+                      </div></li>
+                  <li class="heading"><NavLink to={'/Contact'} className="nav-link" style={this.styles.link}>Contact</NavLink></li>
                 </ul>
               </div>
             </div>
@@ -57,6 +69,7 @@ class NavBar extends Component {
             <Route exact path='/Services' component={Services}/>
             <Route exact path='/NewsPage' component={NewsPage}/>
             <Route exact path='/ServicePage' component={ServicePage}/>
+            <Route exact path='/About/Mission' component={Mission}/>
           </Switch>
         </div>
       </Router>
