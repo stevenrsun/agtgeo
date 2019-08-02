@@ -100,10 +100,10 @@ export class News extends Component {
     render() { 
         var newsFormatted = this.formatNews();
         return ( 
-            <div style={{width: '70vw'}}>
+            <div style={{width: '100vw'}}>
             <div class="container" style={{width: '100vw'}}>
                 <div class="row">
-                    <div class="col-2 border-right text-left">
+                    <div class="col-2 border-right text-center">
                         <br/>
                         <Link onClick={this.reset} style={{fontSize: 20, fontWeight: 'bold', color: '#1cb7e6'}}>All News</Link><br/>
                         <Link onClick={() => this.applyFilter(2019)} style={{fontSize: 20, color: 'black'}}>2019-2020</Link><br/>

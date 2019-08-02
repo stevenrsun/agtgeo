@@ -93,7 +93,7 @@ export class Services extends Component {
     render() { 
         var serviceFormatted = this.formatService();
         return ( 
-            <div style={{width: '70vw'}}>
+            <div style={{width: '100vw'}}>
             <div class="container">
                 <div class="row">
                     <div class="col-2 border-right">
