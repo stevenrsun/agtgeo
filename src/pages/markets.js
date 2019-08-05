@@ -79,7 +79,7 @@ export class Markets extends Component {
 
                             From the complex topography of onshore locations in China to the steep salt flanks beneath the Gulf of Mexico, we transform proprietary data into high- resolution velocity models that help oil and gas companies address their most complex geophysical challenges. We are evolving into a service organization that uses our world-class computing power and proprietary algorithms to develop multidimensional, high-resolution seismic maps quickly and cost-effectively.<br/><br/>
 
-                            Together, our team of elite geophysicists is creating unparalleled value by helping major oil and gas companies select and employ the ideal imaging technology to accurately predict the geophysical properties of salt basins and other subsurface locations.</span>
+                            Together, our team of elite geophysicists is creating unparalleled value by helping major oil and gas companies select and employ the ideal imaging technology to accurately predict the geophysical properties of salt basins and other subsurface locations. To learn more about specific markets we serve, hover over pinpoints on the map below:</span>
                         </div>
                     </div>
                 </div>
