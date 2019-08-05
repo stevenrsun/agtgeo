@@ -71,8 +71,8 @@ export class Markets extends Component {
         return ( 
             <React.Fragment>
             <div class="container border border-grey">
-                <div class="row ml-1 mt-2 mr-3">
-                    <div class="col-lg">
+                <div class="row ml-3 mt-2 mr-3">
+                    <div class="col mr-2">
                         <h1 class="heading mt-5 ml-4" style={this.styles.header}>MARKETS SERVED</h1>
                         <div class="mt-4 ml-4">
                             <span class="txt subheading">The next frontier of energy discovery sits deep below the surface—and beyond the scope of most current imaging technologies. AGT applies our leading-edge depth imaging technologies to proprietary data collected from hard-to-reach places around the world.<br/><br/>

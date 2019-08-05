@@ -11,6 +11,7 @@ import {Mission} from './pages/mission.js';
 import {Management} from './pages/management.js';
 import {Markets} from './pages/markets.js';
 import {Partners} from './pages/partners.js';
+import {WhyUs} from './pages/whyUs.js';
 import './App.css';
 
 class NavBar extends Component {
@@ -78,6 +79,7 @@ class NavBar extends Component {
             <Route exact path='/About/Management' component={Management}/>
             <Route exact path='/About/Markets' component={Markets}/>
             <Route exact path='/About/Partners' component={Partners}/>
+            <Route exact path='/About/WhyUs' component={WhyUs}/>
           </Switch>
         </div>
       </Router>

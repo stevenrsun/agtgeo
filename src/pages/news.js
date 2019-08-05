@@ -102,7 +102,7 @@ export class News extends Component {
         var newsFormatted = this.formatNews();
         return ( 
             <div style={{width: '100vw'}}>
-            <div class="container" style={{width: '100vw'}}>
+            <div class="container border border-grey" style={{width: '100vw'}}>
                 <div class="row">
                     <div class="col-2 border-right text-center">
                         <br/>

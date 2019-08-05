@@ -94,7 +94,7 @@ export class Services extends Component {
         var serviceFormatted = this.formatService();
         return ( 
             <div style={{width: '100vw'}}>
-            <div class="container">
+            <div class="container border border-grey">
                 <div class="row">
                     <div class="col-2 border-right">
                         <br/>
