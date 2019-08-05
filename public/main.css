@@ -51,6 +51,18 @@ body {
   font-weight: 700 !important;
 }
 
+.heading-2 {
+  font-family: 'Blinker', sans-serif;
+  vertical-align: middle;
+  padding-bottom: 6px;
+}
+
+.heading-3 {
+  font-family: 'Blinker', sans-serif;
+  vertical-align: middle !important;
+  font-weight: 700;
+}
+
 .nav-text {
   font-family: 'Blinker', sans-serif;
 	font-weight: 300;
@@ -59,6 +71,11 @@ body {
 .subheading {
   font-weight: 300 !important;
   font-family: 'Raleway', sans-serif;
+}
+
+.subheading-bold {
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
 }
 
 .card-text {
