@@ -8,6 +8,7 @@ import {Services} from './pages/services.js';
 import {NewsPage} from './pages/newsPage.js';
 import {ServicePage} from './pages/servicePage.js';
 import {Mission} from './pages/mission.js';
+import {Management} from './pages/management.js';
 import './App.css';
 
 class NavBar extends Component {
@@ -70,6 +71,7 @@ class NavBar extends Component {
             <Route exact path='/NewsPage' component={NewsPage}/>
             <Route exact path='/ServicePage' component={ServicePage}/>
             <Route exact path='/About/Mission' component={Mission}/>
+            <Route exact path='/About/Management' component={Management}/>
           </Switch>
         </div>
       </Router>
