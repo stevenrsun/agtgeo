@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Footer} from '../components/footer.js';
 
 export class Management extends Component {
     state = {  }
@@ -31,6 +32,7 @@ export class Management extends Component {
 
     render() { 
         return ( 
+            <React.Fragment>
             <div class="container border border-grey">
                 <div class="row m-5">
                     <div>
@@ -122,6 +124,8 @@ Since joining AGT in 2013, he has developed and implemented novel techniques for
                     </div>
                 </div>
             </div>
+            <Footer/>
+            </React.Fragment>
         );
     }
 }

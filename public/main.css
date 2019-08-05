@@ -91,5 +91,61 @@ body {
   font-family: 'Blinker', sans-serif;
 }
 
+.container{
+	position: relative;
+}
 
+.pinpoint1{
+	position: absolute;
+	left:168px;
+	top:273px;
+}
 
+.labelbox{
+	position: absolute;
+	left:-35px;
+	top:395px;
+	width: 300px;
+}
+
+.pinpoint2{
+	position: absolute;
+	left:180px;
+	top:303px;
+}
+
+.pinpoint3{
+	position: absolute;
+	left:198px;
+	top:316px;
+}
+
+.pinpoint4{
+	position: absolute;
+	left:218px;
+	top:329px;
+}
+
+.pinpoint5{
+	position: absolute;
+	left:385px;
+	top:338px;
+}
+
+.pinpoint6{
+	position: absolute;
+	left:444.5px;
+	top:420px;
+}
+
+.pinpoint7{
+	position: absolute;
+	left:712.5px;
+	top:280px;
+}
+
+.pinpoint8{
+	position: absolute;
+	left:744px;
+	top:444.5px;
+}

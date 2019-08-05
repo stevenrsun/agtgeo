@@ -9,6 +9,7 @@ import {NewsPage} from './pages/newsPage.js';
 import {ServicePage} from './pages/servicePage.js';
 import {Mission} from './pages/mission.js';
 import {Management} from './pages/management.js';
+import {Markets} from './pages/markets.js';
 import './App.css';
 
 class NavBar extends Component {
@@ -46,7 +47,7 @@ class NavBar extends Component {
                         <div class="dropdown-menu pull-left" aria-labelledby="dropdownMenuButton">
                           <a class="dropdown-item no-hover-underline" href="#" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/Mission'}>Our Mission</Link></a>
                           <a class="dropdown-item no-hover-underline" href="#" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/Management'}>Management Team</Link></a>
-                          <a class="dropdown-item no-hover-underline" href="#" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/MarketsServed'}>Markets Served</Link></a>
+                          <a class="dropdown-item no-hover-underline" href="#" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/Markets'}>Markets Served</Link></a>
                           <a class="dropdown-item no-hover-underline" href="#" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/Partners'}>Partners</Link></a>
                           <a class="dropdown-item no-hover-underline" href="#" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/WhyUs'}>Why AGT?</Link></a>                        </div>
                       </div></li>
@@ -69,9 +70,12 @@ class NavBar extends Component {
             <Route exact path='/News' component={News}/>
             <Route exact path='/Services' component={Services}/>
             <Route exact path='/NewsPage' component={NewsPage}/>
+            <Route exact path='/NewsPage/:id' component={NewsPage}/>
             <Route exact path='/ServicePage' component={ServicePage}/>
+            <Route exact path='/ServicePage/:id' component={ServicePage}/>
             <Route exact path='/About/Mission' component={Mission}/>
             <Route exact path='/About/Management' component={Management}/>
+            <Route exact path='/About/Markets' component={Markets}/>
           </Switch>
         </div>
       </Router>
