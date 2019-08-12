@@ -5,7 +5,7 @@ export class CorporateLocations extends Component {
     state = {  }
     render() { 
         return ( 
-            <div class="col-sm" style={{backgroundColor: 'lightgrey', width: '100px'}}>
+            <div class="col" style={{backgroundColor: 'lightgrey'}}>
               <h5 class="heading mt-3 ml-2" style={{fontWeight: 'bold', fontSize: 15, color: '#3d3838'}}>CORPORATE LOCATIONS</h5>
               <div class="row ml-2">
                 <h3 class="heading mt-1" style={{fontWeight: 'bold', fontSize: 20, color: '#f00e0e'}}>HOUSTON TEXAS</h3>
