@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Fade } from 'react-slideshow-image';
 import {NewsCard} from '../components/newsCard.js';
-import {Link} from 'react-router-dom';
+import {CorporateLocations} from '../components/corporateLocations.js';
 import {Footer} from '../components/footer.js';
 
 export class Home extends Component {
@@ -31,7 +31,8 @@ export class Home extends Component {
         },
         fade: {
             width: '60vw',
-            height: '60vh'
+            height: '60vh',
+            flexDirection: 'row'
         }
     }
 
@@ -61,49 +62,19 @@ export class Home extends Component {
     render() { 
         return (
           <React.Fragment>
-          <div class="row" style={{width: '100vw'}}>
-            <div class="col-lg ml-2">
+          <div class="container-fluid border border-grey" style={{width: '60vw'}}>
+            <div class="row">
               {this.Slideshow()}
             </div>
-            <div class="col-sm" style={{backgroundColor: '#a6a8ab'}}>
-              <h5 class="heading mt-5 m-3" style={{fontWeight: 'bold', fontSize: 30, color: '#3d3838'}}>CORPORATE LOCATIONS</h5>
-              <div class="row ml-3">
-                <h3 class="heading mt-3" style={{fontWeight: 'bold', fontSize: 40, color: '#f00e0e'}}>HOUSTON TEXAS</h3>
-                &nbsp;
-                <h3 class="mt-3" style={{fontWeight: 'bold', color: '#0293db', fontSize: 40}}>-</h3>
-                &nbsp;
-                <h3 class="heading mt-3" style={{fontWeight: 'bold', fontSize: 40, color: '#f00e0e'}}>USA</h3>
+            <div class="row">
+              <div class="col-8 border-right border-grey">
+                asdf
               </div>
-              <div class="ml-3">
-                <span class="txt subheading" style={{fontSize: 20}}>14100 Southwest Freeway, Suite 110<br/></span>
-                <span class="txt subheading" style={{fontSize: 20}}>Sugar Land, TX 77478 USA </span>
-                <Link to={'/address_sugarland'} style={{fontSize: 20}}>
-                  (Map)
-                </Link><br/>
-                <span class="txt subheading" style={{fontSize: 20}}>Tel: 281.888.6789</span>
-              </div>
-
-              <div class="row ml-3">
-                <h3 class="heading mt-4" style={{fontWeight: 'bold', fontSize: 40, color: '#f00e0e'}}>BEIJING</h3>
-                &nbsp;
-                <h3 class="mt-4" style={{fontWeight: 'bold', color: '#0293db', fontSize: 40}}>-</h3>
-                &nbsp;
-                <h3 class="heading mt-4" style={{fontWeight: 'bold', fontSize: 40, color: '#f00e0e'}}>CHINA</h3>
-              </div>
-              <div class="ml-3">
-                <span class="txt subheading" style={{fontSize: 20}}>69 Banjing Rd, Suite East 3A<br/></span>
-                <span class="txt subheading" style={{fontSize: 20}}>Haidian District<br/></span>
-                <span class="txt subheading" style={{fontSize: 20}}>Beijing 100097 China </span>
-                <Link to={'/address_beijing'} style={{fontSize: 20}}>
-                  (Map)
-                </Link><br/>
-                <span class="txt subheading" style={{fontSize: 20}}>Tel: +86 10 8843 6307</span>
-              </div>
+              <CorporateLocations/>
             </div>
+            
            </div>
-           <br/>
-           <br/>
-           <br/><br/><br/>
+           
            <Footer/>
           </React.Fragment>
         );

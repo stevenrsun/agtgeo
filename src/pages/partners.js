@@ -30,7 +30,9 @@ export class Partners extends Component {
                     <div class="col-lg m-4">
                         <h1 class="heading mb-4" style={this.styles.header}>PARTNERS</h1>
                             <span class="txt subheading">As a research and service organization, AGT is committed to accelerating the development of innovative seismic imaging technologies and providing global oil and gas companies with the industry’s most accurate, high resolution subsurface images. We form strategic research and development </span>
-                            <span class="txt subheading-bold" style={this.styles.blue}>PARTNERSHIPS FOCUSED ON TECHNICAL DEVELOPMENT, TESTING AND TRIALS.</span>
+                            <span class="txt subheading-bold" style={this.styles.blue}>PARTNERSHIPS FOCUSED ON TECHNICAL DEVELOPMENT</span>
+                            <span class="txt subheading">, </span>
+                            <span class="txt subheading-bold" style={this.styles.blue}>TESTING AND TRIALS.</span>
                             <br/><br/>
                             <span class="txt subheading">We also collaborate with other imaging service providers whose clients benefit from our collective knowledge along with AGT’s technologies, proprietary algorithms and custom solutions.</span>
                             <br/><br/>
