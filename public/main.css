@@ -149,3 +149,7 @@ body {
 	left:744px;
 	top:444.5px;
 }
+
+.container{
+		max-width: '1920px';
+}

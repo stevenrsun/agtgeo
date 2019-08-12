@@ -39,8 +39,7 @@ class NavBar extends Component {
               <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className="navbar-nav ml-auto list-unstyled mt-5">
                   <li class="heading"><NavLink to={'/News'} className="nav-link" style={this.styles.link}>News</NavLink></li>
-                  <li class="heading"><NavLink to={'/Services'} className="nav-link" style={this.styles.link}>Services</NavLink></li>
-                  <li class="heading"><NavLink to={'/Technologies'} className="nav-link" style={this.styles.link}>Technologies</NavLink></li>
+                  <li class="heading"><NavLink to={'/Services'} className="nav-link" style={this.styles.link}>Services and Technologies</NavLink></li>
                   <li class="heading"><div class="dropdown align-this-dropdown">
                         <button class="btn btn-secondary dropdown-toggle heading" 
                                 style={{backgroundColor: 'white', color: 'grey', borderColor: 'white'}} type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

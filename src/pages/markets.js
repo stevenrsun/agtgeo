@@ -6,6 +6,40 @@ export class Markets extends Component {
         hover: false,
         title: "",
         info: "",
+        // starting here, titles/info (abbreviated t and i) representing information for each market pinpoint on the map are saved
+        // to add more markets, first open main.css in agtgeo/public (public is found in the same folder as src), and follow the
+        // instructions below
+
+        // First, create new variables tX and iX, X being the next number in sequence of the previous existing t's and i's 
+        // ex. if the last t/i group is t8: i8: then create t9 and i9
+        // You also need to find the array containing require("imageurl") duplicated many times. It's inside the state block 
+        // this comment is a part of, and should be at the very end. Just copy paste that require("image") line one more time with
+        // commas and everything.
+        // Make sure to fill in tX and iX with the relevant text, and continue to the next step: adding a pinpoint in main.css.
+
+        // Adding a pinpoint using main.css: 
+        // 1) create a new css class using the format below (X corresponds to a number, for example, if the 
+        //    previous .pinpoint class was .pinpoint8, X would be 9 and the next .pinpoint would be .pinpoint9) -
+        // .pinpointX{
+        //      position: absolute;
+        //      left: 100px;
+        //      top: 100px;  
+        //  }
+        //  NOTE: 100px is an example number, the actual number will vary and require some tinkering to place the pinpoint on the map
+        //  correctly. left corresponds to how much distance the pinpoint has from the left, and top corresponds to how much distance 
+        //  the pinpoint has from the top (of the map image including some whitespace around the actual map)
+
+        // next, go to line 123 in this file
+
+        // copy paste the line that looks like
+        //<img class="ml-4 pinpoint1" id={0} title={this.state.t1} info={this.state.i1} src={this.state.pinpoint[0]} alt="pinpoint_red1"
+        //                    onMouseOver={this.onHover} onMouseOut={this.onExit}/> 
+        // and paste it at the bottom of the block of duplicated lines that consist of a <img /> item
+        // Then, just change the numbers properly, as in change X in pinpointX to whatever number you put after .pinpoint in main.css.
+        // Every number that isn't id={y} and this.state.pinpoint[y] should be equal to X. in the examples i just mentioned, y should equal X-1
+        // In conclusion, if you just created class .pinpoint9 in main.css, your new <img /> item should look like this:
+        //<img class="ml-4 pinpoint9" id={8} title={this.state.t9} info={this.state.i9} src={this.state.pinpoint[8]} alt="pinpoint_red9"
+        //                    onMouseOver={this.onHover} onMouseOut={this.onExit}/> 
         t1: "MID-CONTINENT",
         i1: "AGT's iterative approach to building an anisotropic velocity field allows for much better well ties and crisper fault definitions in resolving the isolated velocity anomalies in a localized area, resulting in better structural ties to the data.",
         t2: "ONSHORE GULF COAST",

@@ -32,11 +32,14 @@ export class WhyUs extends Component {
                             <div class="mt-4 ml-4">
                                 <span class="txt subheading">In today’s highly competitive, capital intensive oil and gas industry, competitive advantage goes to those who have the skills, resources and discipline to find untapped energy reserves in hard-to-reach places. AGT offers oil and gas companies and industry partners a </span>
                                 <span class="txt subheading-bold" style={this.styles.blue}>DYNAMIC TEAM OF EXPERTS </span>
+                                <span class="txt subheading">committed to bring unsurpassed resolution to these complex sub-surface environments.</span>
                                 <br/><br/>
                                 <span class="txt subheading">By combining world-class expertise with innovative technologies, we deliver </span>
                                 <span class="txt subheading-bold" style={this.styles.blue}>CUSTOM SOLUTIONS </span>
                                 <span class="txt subheading">that help optimize energy exploration and investment. We use our knowledge of the world’s most challenging onshore and offshore locations to identify the most effective imaging technology for each site. And we apply our </span>
-                                <span class="txt subheading-bold" style={this.styles.blue}>WORLD-CLASS COMPUTING POWER, UNPARALLELED SEISMIC PROCESSING ALGORITHMS AND UNIQUE IMAGE FLOW </span>
+                                <span class="txt subheading-bold" style={this.styles.blue}>WORLD-CLASS COMPUTING POWER</span> 
+                                <span class="txt subheading">, </span>
+                                <span class="txt subheading-bold" style={this.styles.blue}>UNPARALLELED SEISMIC PROCESSING ALGORITHMS AND UNIQUE IMAGE FLOW </span>
                                 <span class="txt subheading">to turn your proprietary data into high-quality, three-dimensional sub-surface maps quickly and cost effectively.</span>
                                 <br/><br/>
                                 <span class="txt subheading">With AGT, you also benefit from objective, impartial advice; technical proficiency; a passion for innovation; and </span>
