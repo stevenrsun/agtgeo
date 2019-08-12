@@ -12,6 +12,8 @@ import {Management} from './pages/management.js';
 import {Markets} from './pages/markets.js';
 import {Partners} from './pages/partners.js';
 import {WhyUs} from './pages/whyUs.js';
+import {Technology} from './pages/technology.js';
+import {TechnologyPage} from './pages/technologyPage.js';
 import './App.css';
 
 class NavBar extends Component {
@@ -39,7 +41,8 @@ class NavBar extends Component {
               <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className="navbar-nav ml-auto list-unstyled mt-5">
                   <li class="heading"><NavLink to={'/News'} className="nav-link" style={this.styles.link}>News</NavLink></li>
-                  <li class="heading"><NavLink to={'/Services'} className="nav-link" style={this.styles.link}>Services and Technologies</NavLink></li>
+                  <li class="heading"><NavLink to={'/Services'} className="nav-link" style={this.styles.link}>Services</NavLink></li>
+                  <li class="heading"><NavLink to={'/Technology'} className="nav-link" style={this.styles.link}>Technologies</NavLink></li>
                   <li class="heading"><div class="dropdown align-this-dropdown">
                         <button class="btn btn-secondary dropdown-toggle heading" 
                                 style={{backgroundColor: 'white', color: 'grey', borderColor: 'white'}} type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -70,10 +73,13 @@ class NavBar extends Component {
             <Route exact path='/' component={Home}/>
             <Route exact path='/News' component={News}/>
             <Route exact path='/Services' component={Services}/>
+            <Route exact path='/Technology' component={Technology}/>
             <Route exact path='/NewsPage' component={NewsPage}/>
             <Route exact path='/NewsPage/:id' component={NewsPage}/>
             <Route exact path='/ServicePage' component={ServicePage}/>
             <Route exact path='/ServicePage/:id' component={ServicePage}/>
+            <Route exact path='/TechnologyPage' component={TechnologyPage}/>
+            <Route exact path='/TechnologyPage/:id' component={TechnologyPage}/>
             <Route exact path='/About/Mission' component={Mission}/>
             <Route exact path='/About/Management' component={Management}/>
             <Route exact path='/About/Markets' component={Markets}/>

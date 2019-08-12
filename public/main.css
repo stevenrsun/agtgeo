@@ -103,7 +103,18 @@ body {
 
 .labelbox{
 	position: absolute;
-	left:-35px;
+	left:-35px;ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
 	top:395px;
 	width: 300px;
 }
@@ -152,4 +163,17 @@ body {
 
 .container{
 		max-width: '1920px';
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul.list-group li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #1cb7e6; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }

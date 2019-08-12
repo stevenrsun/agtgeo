@@ -10,9 +10,9 @@ export class ServiceItem extends Component {
         else if(this.props.info.format == "list"){
             var temp = [];
             for(let i=0; i<this.props.info.list.length; i++){
-                temp.push(<li class="list-group-item subheading border border-light"><span class="txt subheading" style={{color:'#1cb7e6'}}>• </span>{this.props.info.list[i]}</li>);
+                temp.push(<li class="list-group-item subheading border border-light py-0">{this.props.info.list[i]}</li>);
             }
-            cardInfo = <ul class="list-group list-group-flush">{temp}</ul>;
+            cardInfo = <ul class="list-group list-group-flush mb-3">{temp}</ul>;
         }
 
         return (  

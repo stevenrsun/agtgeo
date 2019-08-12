@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import { Fade } from 'react-slideshow-image';
 import {NewsCard} from '../components/newsCard.js';
 import {CorporateLocations} from '../components/corporateLocations.js';
@@ -33,6 +34,10 @@ export class Home extends Component {
             width: '60vw',
             height: '60vh',
             flexDirection: 'row'
+        },
+        blue: {
+          color: '#1cb7e6',
+          fontSize: 25
         }
     }
 
@@ -68,7 +73,13 @@ export class Home extends Component {
             </div>
             <div class="row">
               <div class="col-8 border-right border-grey">
-                asdf
+                <div class="container-fluid m-4" style={{width: '550px'}}>
+                  <span class="txt subheading" style={{fontSize: 25}}>Find out how </span>
+                  <span class="txt subheading-bold" style={this.styles.blue}>AGT PRODUCES HIGHER RESOLUTION RESULTS</span>
+                  <span class="txt subheading" style={{fontSize: 25}}> than conventional processing methods and algorithms used today.&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  
+                  <Link to={'/Services'} style={{fontStyle: 'italic', textDecorationLine: 'underline'}}>Read more</Link>
+                </div>
               </div>
               <CorporateLocations/>
             </div>
