@@ -16,7 +16,7 @@ export class TechnologyItem extends Component {
         }
 
         return (  
-            <div className="card border-light" style={{width: '30vw'}}>
+            <div className="card border-light" style={{width: '28vw'}}>
                 <div className="card-body">
                     <h5 class="card-title heading" style={{color: 'red'}}>{this.props.info['title']}</h5>
                     {cardInfo}

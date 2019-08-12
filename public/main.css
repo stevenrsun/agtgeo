@@ -177,3 +177,10 @@ ul.list-group li::before {
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+    margin-right: 0;
+    margin-left: 0;
+}

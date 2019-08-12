@@ -115,22 +115,20 @@ export class Technology extends Component {
                     </div>
                     <div class="col-8">
                         <h1 class="heading ml-2 mt-1" style={{fontSize: 35, color: '#585c5e'}}>{this.state.title}</h1>
-                        <div class="container-fluid" style={{width: '60vw'}}>
+                        <div class="container-fluid" style={{width: '65vw'}}>
                             <div class="row">
-                                {techFormatted.length >= 1 ? techFormatted[0] : null}
-                                {techFormatted.length >= 2 ? techFormatted[1] : null}
-                            </div>
-                            <div class="row">
-                                {techFormatted.length >= 3 ? techFormatted[2] : null}
-                                {techFormatted.length >= 4 ? techFormatted[3] : null}
-                            </div>
-                            <div class="row">
-                                {techFormatted.length >= 5 ? techFormatted[4] : null}
-                                {techFormatted.length >= 6 ? techFormatted[5] : null}
-                            </div>
-                            <div class="row">
-                                {techFormatted.length >= 7 ? techFormatted[6] : null}
-                                {techFormatted.length >= 8 ? techFormatted[7] : null}
+                                <div class="col padding-0" style={{width: '28vw'}}>
+                                    {techFormatted.length >= 1 ? techFormatted[0] : null}
+                                    {techFormatted.length >= 3 ? techFormatted[2] : null}
+                                    {techFormatted.length >= 5 ? techFormatted[4] : null}
+                                    {techFormatted.length >= 7 ? techFormatted[6] : null}
+                                </div>
+                                <div class="col padding-0">
+                                    {techFormatted.length >= 2 ? techFormatted[1] : null}
+                                    {techFormatted.length >= 4 ? techFormatted[3] : null}
+                                    {techFormatted.length >= 6 ? techFormatted[5] : null}
+                                    {techFormatted.length >= 8 ? techFormatted[7] : null}
+                                </div>
                             </div>
                         </div>
                     </div>
