@@ -32,12 +32,14 @@ export class Home extends Component {
     styles = {
         image: {
             width: '60vw',
-            height: '60vh'
+            height: '60vh',
+            minWidth: 700
         },
         fade: {
             width: '60vw',
             height: '60vh',
-            flexDirection: 'row'
+            flexDirection: 'row',
+            minWidth: 700
         },
         blue: {
           color: '#1cb7e6',
@@ -56,16 +58,16 @@ export class Home extends Component {
             <Fade {...this.fadeProperties} style={this.styles.fade}>
               <div className="each-fade">
                 <div className="container-lg">
-                  <NewsCard title={this.state.newsSlides[0]['title']} caption={this.state.newsSlides[0]['caption']} img={this.state.newsSlides[0]['img']}/>
+                  <img src={this.state.newsSlides[0]['img']} alt='asdf' style={this.styles.image}/>
                 </div>
               </div>
               <div className="each-fade">
                 <div className="container-lg">
-                  <NewsCard title={this.state.newsSlides[1]['title']} caption={this.state.newsSlides[1]['caption']} img={this.state.newsSlides[1]['img']}/>                    </div>
+                  <img src={this.state.newsSlides[1]['img']} alt='asdf' style={this.styles.image}/>                    </div>
                 </div>
               <div className="each-fade">
                 <div className="container-lg">
-                  <NewsCard title={this.state.newsSlides[2]['title']} caption={this.state.newsSlides[2]['caption']} img={this.state.newsSlides[2]['img']}/>                </div>
+                  <img src={this.state.newsSlides[2]['img']} alt='asdf' style={this.styles.image}/>               </div>
               </div>
             </Fade>
           </div>
@@ -75,13 +77,13 @@ export class Home extends Component {
     render() { 
         return (
           <React.Fragment>
-          <div class="container-fluid border border-grey" style={{width: '60vw'}}>
+          <div class="container-fluid border border-grey" style={{width: '60vw', minWidth: 700}}>
             <div class="row">
               {this.Slideshow()}
             </div>
             <div class="row">
               <div class="col-8 border-right border-grey">
-                <div class="container-fluid m-4" style={{width: '550px'}}>
+                <div class="container-fluid m-4" style={{width: '30vw'}}>
                   <span class="txt subheading" style={{fontSize: 25}}>Find out how </span>
                   <span class="txt subheading-bold" style={this.styles.blue}>AGT PRODUCES HIGHER RESOLUTION RESULTS</span>
                   <span class="txt subheading" style={{fontSize: 25}}> than conventional processing methods and algorithms used today.&nbsp;&nbsp;&nbsp;&nbsp;</span>

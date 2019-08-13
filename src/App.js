@@ -35,6 +35,9 @@ class NavBar extends Component {
         <div>
           <img src={navbar_top} alt="navtop" style={this.styles.image}/>
           <nav className="navbar navbar-expand-lg navbar-light bg-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
             <NavLink to={'/'} className="nav-link" style={this.styles.link}>
               <img src={logo} alt="Logo" className="mb-0 ml-3"/>
             </NavLink>
