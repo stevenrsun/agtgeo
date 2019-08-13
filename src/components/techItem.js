@@ -10,13 +10,13 @@ export class TechnologyItem extends Component {
         else if(this.props.info.format == "list"){
             var temp = [];
             for(let i=0; i<this.props.info.list.length; i++){
-                temp.push(<li class="list-group-item subheading border border-light py-0">{this.props.info.list[i]}</li>);
+                temp.push(<li class="list-group-item subheading border border-white py-0">{this.props.info.list[i]}</li>);
             }
             cardInfo = <ul class="list-group list-group-flush mb-3">{temp}</ul>;
         }
 
         return (  
-            <div className="card border-light" style={{width: '28vw', minWidth: 350}}>
+            <div className="card border-white" style={{width: '28vw', minWidth: 350}}>
                 <div className="card-body">
                     <h5 class="card-title heading" style={{color: 'red'}}>{this.props.info['title']}</h5>
                     {cardInfo}

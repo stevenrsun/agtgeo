@@ -5,7 +5,7 @@ export class NewsItem extends Component {
     state = {  }
     render() { 
         return ( 
-            <div className="card border-light">
+            <div className="card border-white">
                 <div className="card-body">
                     <h5 class="card-title heading" style={{color: 'red'}}>{this.props.info['title']}</h5>
                     <p class="subheading card-text">{this.props.info['text']}</p>
