@@ -6,6 +6,9 @@ import {Footer} from '../components/footer.js';
 
 export class News extends Component {
     state = { 
+
+        // 90 ish line
+
         // id=number which will show up in url as /NewsPage/id
         // year = year news was published in, for use in filtering by year
         // title: title which will show up in bold red on the card
@@ -84,6 +87,7 @@ export class News extends Component {
                         <br/>
                         <Link class="heading" onClick={this.reset} style={{fontSize: 25, fontWeight: 'bold', color: '#1cb7e6'}}>All News</Link><br/>
                         <Link class="subheading" onClick={() => this.applyFilter(2019)} style={{fontSize: 20, color: 'black'}}>2019-2020</Link><br/>
+                        <Link class="subheading" onClick={() => this.applyFilter(2018)} style={{fontSize: 20, color: 'black'}}>2018-2019</Link><br/>
                     </div>
                     <div class="col-lg">
                         <h1 class="heading ml-2 mt-1" style={{fontSize: 35, color: '#585c5e'}}>LATEST NEWS</h1>

@@ -17,9 +17,9 @@ export class CorporateLocations extends Component {
               <div class="ml-2">
                 <span class="txt subheading" style={{fontSize: 13}}>14100 Southwest Freeway, Suite 110<br/></span>
                 <span class="txt subheading" style={{fontSize: 13}}>Sugar Land, TX 77478 USA </span>
-                <Link to={'/address_sugarland'} style={{fontSize: 13}}>
+                <a href='https://goo.gl/maps/J9EKkRi5LgT2' class="link" style={{fontSize: 13}}> 
                   (Map)
-                </Link><br/>
+                </a><br/>
                 <span class="txt subheading" style={{fontSize: 13}}>Tel: 281.888.6789</span>
               </div>
 
@@ -34,9 +34,9 @@ export class CorporateLocations extends Component {
                 <span class="txt subheading" style={{fontSize: 13}}>69 Banjing Rd, Suite East 3A<br/></span>
                 <span class="txt subheading" style={{fontSize: 13}}>Haidian District<br/></span>
                 <span class="txt subheading" style={{fontSize: 13}}>Beijing 100097 China </span>
-                <Link to={'/address_beijing'} style={{fontSize: 13}}>
+                <a href='https://goo.gl/maps/909cp' class="link" style={{fontSize: 13}}> 
                   (Map)
-                </Link><br/>
+                </a><br/>
                 <span class="txt subheading" style={{fontSize: 13}}>Tel: +86 10 8843 6207</span>
               </div>
             </div>

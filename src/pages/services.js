@@ -15,15 +15,16 @@ export class Services extends Component {
         // the body key corresponds to the text that will appear in each instance page (after clicking more info on a card)
         // any additional keys can be accessed in src/components/serviceItem.js using this.props.info.keyName or this.props.info['keyName']
         services: [
-            { format: 'list', category: 'service', id: 3, title: 'Research & Development', list: ['40% of all capital is committed to R&D', 'Customer Focused Results - technology roadmap is adaptable', 'Rapid Technology Implementation - i.e. AVO Compliant RTM Gathers, Q', 'Nimble; technology roadmap adaptable to clients\' needs'], body: 'Body text to be added.'},
-            { format: 'list', category: 'service', id: 2, title: 'Migration & Velocity Model Building', list: ['2D/3D Time', '2D/3D Depth', 'Land/Marine (NAZ, WAZ, Broadband, Nodal, etc.)'], body: 'Body text to be added.'},
-            { format: 'text', category: 'service', id: 1, title: 'Seismic Imaging Service', text: 'AGT provides advanced, best-in-class seismic imaging services to Oil and Gas Companies.', body: 'Body text to be added.'}
+            { format: 'list', id: 4364364, title: 'Researcopment', list: ['40% of all capital is committed to R&D', 'Customer Focused Results - technology roadmap is adaptable', 'Rapid Technology Implementation - i.e. AVO Compliant RTM Gathers, Q', 'Nimble; technology roadmap adaptable to clients\' needs'], body: 'asdfasfdafae'},
+            { format: 'list', id: 3, title: 'Research & Development', list: ['40% of all capital is committed to R&D', 'Customer Focused Results - technology roadmap is adaptable', 'Rapid Technology Implementation - i.e. AVO Compliant RTM Gathers, Q', 'Nimble; technology roadmap adaptable to clients\' needs'], body: 'Body text to be added.'},
+            { format: 'list', id: 2, title: 'Migration & Velocity Model Building', list: ['2D/3D Time', '2D/3D Depth', 'Land/Marine (NAZ, WAZ, Broadband, Nodal, etc.)'], body: 'Body text to be added.'},
+            { format: 'text', id: 1, title: 'Seismic Imaging Service', text: 'AGT provides advanced, best-in-class seismic imaging services to Oil and Gas Companies.', body: 'Body text to be added.'}
         ],
-        servicesReset:[
-            { format: 'list', category: 'service', id: 3, title: 'Research & Development', list: ['40% of all capital is committed to R&D', 'Customer Focused Results - technology roadmap is adaptable', 'Rapid Technology Implementation - i.e. AVO Compliant RTM Gathers, Q', 'Nimble; technology roadmap adaptable to clients\' needs'], body: 'Body text to be added.'},
-            { format: 'list', category: 'service', id: 2, title: 'Migration & Velocity Model Building', list: ['2D/3D Time', '2D/3D Depth', 'Land/Marine (NAZ, WAZ, Broadband, Nodal, etc.)'], body: 'Body text to be added.'},
-            { format: 'text', category: 'service', id: 1, title: 'Seismic Imaging Service', text: 'AGT provides advanced, best-in-class seismic imaging services to Oil and Gas Companies.', body: 'Body text to be added.'}
-        ], // a copy of the entirety of news to be saved every time news is modified by a function call, since there is currently
+        /*servicesReset:[
+            { format: 'list', id: 3, title: 'Research & Development', list: ['40% of all capital is committed to R&D', 'Customer Focused Results - technology roadmap is adaptable', 'Rapid Technology Implementation - i.e. AVO Compliant RTM Gathers, Q', 'Nimble; technology roadmap adaptable to clients\' needs'], body: 'Body text to be added.'},
+            { format: 'list', id: 2, title: 'Migration & Velocity Model Building', list: ['2D/3D Time', '2D/3D Depth', 'Land/Marine (NAZ, WAZ, Broadband, Nodal, etc.)'], body: 'Body text to be added.'},
+            { format: 'text', id: 1, title: 'Seismic Imaging Service', text: 'AGT provides advanced, best-in-class seismic imaging services to Oil and Gas Companies.', body: 'Body text to be added.'}
+        ], */// a copy of the entirety of news to be saved every time news is modified by a function call, since there is currently
         // no filter for this page, it's useless, but I'm keeping it here in case we decide to apply filters later. There's 
         // no need to update this at all until filters are implemented, so you can leave it alone unlike the news/technology pages
         numServiceItems: 6, // number of news entries to be displayed per page

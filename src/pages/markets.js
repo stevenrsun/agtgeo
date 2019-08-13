@@ -65,6 +65,7 @@ export class Markets extends Component {
         require('../images/pinpoint_red.png'),
         require('../images/pinpoint_red.png'),
         require('../images/pinpoint_red.png'),
+        require('../images/pinpoint_red.png'),
         require('../images/pinpoint_red.png')]
      }
 

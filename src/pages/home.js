@@ -8,9 +8,9 @@ import {Footer} from '../components/footer.js';
 export class Home extends Component {
     state = {
       newsSlides: [
-        {title: 'Title 1', caption: 'caption 1', img: require('../images/1.jpeg')},
-        {title: 'Title 2', caption: 'caption 2', img: require('../images/2.jpeg')},
-        {title: 'Title 3', caption: 'caption 3', img: require('../images/3.jpg')}
+        {title: '', caption: '', img: require('../images/home-image-1.jpg')},
+        {title: '', caption: '', img: require('../images/home-image-2.jpg')},
+        {title: '', caption: '', img: require('../images/home-image-3.jpg')}
       ]
     }
 
@@ -38,6 +38,10 @@ export class Home extends Component {
         blue: {
           color: '#1cb7e6',
           fontSize: 25
+        },
+        link: {
+          fontStyle: 'italic', 
+          textDecorationLine: 'underline'
         }
     }
 
@@ -78,7 +82,7 @@ export class Home extends Component {
                   <span class="txt subheading-bold" style={this.styles.blue}>AGT PRODUCES HIGHER RESOLUTION RESULTS</span>
                   <span class="txt subheading" style={{fontSize: 25}}> than conventional processing methods and algorithms used today.&nbsp;&nbsp;&nbsp;&nbsp;</span>
                   
-                  <Link to={'/Services'} style={{fontStyle: 'italic', textDecorationLine: 'underline'}}>Read more</Link>
+                  <Link to={'/Services'} style={this.styles.link}>Read more</Link>
                 </div>
               </div>
               <CorporateLocations/>
