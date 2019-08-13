@@ -69,6 +69,10 @@ export class Markets extends Component {
         require('../images/pinpoint_red.png')]
      }
 
+     componentDidMount() {
+        document.title = 'AGT - Markets';
+    }
+
     styles = {
         header: {
             color: 'red',

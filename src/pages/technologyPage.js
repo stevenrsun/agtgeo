@@ -8,6 +8,7 @@ export class TechnologyPage extends Component {
     componentDidMount = () => {
         const {info} = this.props.location.state;
         this.setState({info});
+        document.title = 'AGT - ' + info.title;
     }
 
     styles = {

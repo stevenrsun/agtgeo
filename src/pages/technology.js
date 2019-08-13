@@ -41,6 +41,10 @@ export class Technology extends Component {
         page: 0,
         title: 'TECHNOLOGIES'
     }
+
+    componentDidMount() {
+        document.title = 'AGT - Technology';
+    }
     
     // convert numTechItems at a time news entries into NewsItem components
     formatTech = () => {

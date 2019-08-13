@@ -22,6 +22,10 @@ export class WhyUs extends Component {
         }
     }
 
+    componentDidMount() {
+        document.title = 'AGT - Why Us?';
+    }
+
     render() { 
         return (  
             <React.Fragment>

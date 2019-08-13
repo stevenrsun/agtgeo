@@ -31,6 +31,10 @@ export class Services extends Component {
         page: 0,
         title: 'SERVICES'
     }
+
+    componentDidMount() {
+        document.title = 'AGT - Services';
+    }
     
     // convert numServiceItems at a time news entries into NewsItem components
     formatService = () => {

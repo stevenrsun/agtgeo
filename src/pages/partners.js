@@ -22,6 +22,10 @@ export class Partners extends Component {
         }
     }
 
+    componentDidMount() {
+        document.title = 'AGT - Partners';
+    }
+
     render() { 
         return (
             <React.Fragment>

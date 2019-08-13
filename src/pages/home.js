@@ -14,6 +14,10 @@ export class Home extends Component {
       ]
     }
 
+    componentDidMount() {
+      document.title = 'AGT';
+    }
+
     // slideshow fade effect
     fadeProperties = {
         duration: 5000,

@@ -30,6 +30,10 @@ export class News extends Component {
         numNewsItems: 6, // number of news entries to be displayed per page
         page: 0
     }
+
+    componentDidMount() {
+        document.title = 'AGT - News';
+    }
     
     // convert numNewsItems at a time news entries into NewsItem components
     formatNews = () => {

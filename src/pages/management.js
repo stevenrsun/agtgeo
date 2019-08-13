@@ -30,6 +30,10 @@ export class Management extends Component {
         }
     }
 
+    componentDidMount() {
+        document.title = 'AGT - Management';
+    }
+
     render() { 
         return ( 
             <React.Fragment>

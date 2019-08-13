@@ -22,6 +22,10 @@ export class Mission extends Component {
         }
     }
 
+    componentDidMount() {
+        document.title = 'AGT - Mission';
+    }
+
     render() { 
         return ( 
             <React.Fragment>

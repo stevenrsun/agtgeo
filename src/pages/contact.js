@@ -4,7 +4,10 @@ import { CorporateLocations } from '../components/corporateLocations.js';
 import {Link} from 'react-router-dom';
 
 export class Contact extends Component {
-    state = {  }
+    
+    componentDidMount() {
+        document.title = 'AGT - Contact';
+    }
 
     styles = {
         header: {
