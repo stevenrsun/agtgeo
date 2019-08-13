@@ -30,7 +30,7 @@ export class Contact extends Component {
     render() { 
         return (
             <React.Fragment>
-            <div class="container border border-grey">
+            <div class="container-fluid border border-grey" style={{width: '60vw', minWidth: 1000}}>
                 <div class="row m-4">
                     <div class="col-7 m-4">
                         <h1 class="heading mb-4" style={this.styles.header}>CONTACT</h1>
@@ -43,7 +43,7 @@ export class Contact extends Component {
                 </div>
             </div>
             <br/><br/><br/><br/><br/>
-            <Footer/>
+            <Footer min={1000}/>
             </React.Fragment>
         );
     }

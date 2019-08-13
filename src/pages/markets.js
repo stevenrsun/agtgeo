@@ -109,7 +109,7 @@ export class Markets extends Component {
     render() { 
         return ( 
             <React.Fragment>
-            <div class="container border border-grey">
+            <div class="container-fluid border border-grey" style={{width: '60vw', minWidth: 1100}}>
                 <div class="row ml-3 mt-2 mr-3">
                     <div class="col mr-2">
                         <h1 class="heading mt-5 ml-4" style={this.styles.header}>MARKETS SERVED</h1>
@@ -148,7 +148,7 @@ export class Markets extends Component {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer min={1100}/>
             </React.Fragment>
         );
     }

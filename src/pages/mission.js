@@ -29,7 +29,7 @@ export class Mission extends Component {
     render() { 
         return ( 
             <React.Fragment>
-            <div class="container border border-grey">
+            <div class="container-fluid border border-grey" style={{width: '60.1vw', minWidth: 700}}>
                 <div class="row m-5 mr-1">
                     <vl/>
                     <div class="col-8">
@@ -68,7 +68,7 @@ export class Mission extends Component {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer min={700}/>
             </React.Fragment>
         );
     }

@@ -29,7 +29,7 @@ export class Partners extends Component {
     render() { 
         return (
             <React.Fragment>
-            <div class="container border border-grey">
+            <div class="container-fluid border border-grey" style={{width: '60vw', minWidth: 700}}>
                 <div class="row m-4">
                     <div class="col-lg m-4">
                         <h1 class="heading mb-4" style={this.styles.header}>PARTNERS</h1>
@@ -48,7 +48,7 @@ export class Partners extends Component {
                 </div>
             </div>
             <br/><br/><br/>
-            <Footer/>
+            <Footer min={700}/>
             </React.Fragment>
         );
     }

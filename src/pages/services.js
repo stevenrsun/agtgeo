@@ -102,7 +102,7 @@ export class Services extends Component {
         var serviceFormatted = this.formatService();
         return ( 
             <div style={{width: '100vw'}}>
-            <div class="container border border-grey">
+            <div class="container-fluid border border-grey" style={{width: '60vw', minWidth: 700}}>
                 <div class="row">
                     <div class="col-8">
                         <h1 class="heading ml-2 mt-1" style={{fontSize: 35, color: '#585c5e'}}>{this.state.title}</h1>
@@ -119,7 +119,7 @@ export class Services extends Component {
                         incrementPageTwice={this.incrementPageTwice}
                         lastPage={Math.ceil(this.state.services.length/this.state.numServiceItems)}/>
             </div>
-            <Footer/>
+            <Footer min={700}/>
             </div>
         );
     }

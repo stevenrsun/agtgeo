@@ -27,7 +27,8 @@ class NavBar extends Component {
     image: {
       height: '8vh',
       maxHeight: 50,
-      width: '100vw'
+      width: '100vw',
+      minWidth: 700
     }
   }
   render() {

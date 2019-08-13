@@ -108,9 +108,9 @@ export class Technology extends Component {
         var techFormatted = this.formatTech();
         return ( 
             <div>
-            <div class="container-fluid border border-grey" style={{width: '80vw'}}>
+            <div class="container-fluid border border-grey" style={{width: '80vw', minWidth: 700}}>
                 <div class="row">
-                    <div class="col-2 border-right text-center">
+                    <div class="col-2 border-right text-center" style={{minWidth: 150}}>
                         <br/>
                        <span class="txt heading" style={{fontSize: 25, fontWeight: 'bold', color: '#1cb7e6'}}>Filter by:</span>
                        <br/>
@@ -147,7 +147,7 @@ export class Technology extends Component {
                         incrementPageTwice={this.incrementPageTwice}
                         lastPage={Math.ceil(this.state.technology.length/this.state.numTechItems)}/>
             </div>
-            <Footer/>
+            <Footer min={700}/>
             </div>
         );
     }

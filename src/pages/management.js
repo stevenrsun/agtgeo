@@ -37,7 +37,7 @@ export class Management extends Component {
     render() { 
         return ( 
             <React.Fragment>
-            <div class="container border border-grey">
+            <div class="container-fluid border border-grey" style={{width: '60vw', minWidth: 700}}>
                 <div class="row m-5">
                     <div>
                         <span class="txt heading-2" style={this.styles.blue}>+ </span>
@@ -128,7 +128,7 @@ Since joining AGT in 2013, he has developed and implemented novel techniques for
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer min={700}/>
             </React.Fragment>
         );
     }

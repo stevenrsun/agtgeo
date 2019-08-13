@@ -85,7 +85,7 @@ export class News extends Component {
         var newsFormatted = this.formatNews();
         return ( 
             <div style={{width: '100vw'}}>
-            <div class="container border border-grey" style={{width: '100vw'}}>
+            <div class="container-fluid border border-grey" style={{width: '60vw', minWidth: 700}}>
                 <div class="row">
                     <div class="col-2 border-right text-center">
                         <br/>
@@ -93,7 +93,7 @@ export class News extends Component {
                         <Link class="subheading" onClick={() => this.applyFilter(2019)} style={{fontSize: 20, color: 'black'}}>2019-2020</Link><br/>
                         <Link class="subheading" onClick={() => this.applyFilter(2018)} style={{fontSize: 20, color: 'black'}}>2018-2019</Link><br/>
                     </div>
-                    <div class="col-lg">
+                    <div class="col">
                         <h1 class="heading ml-2 mt-1" style={{fontSize: 35, color: '#585c5e'}}>LATEST NEWS</h1>
                         {newsFormatted}
                     </div>
@@ -108,7 +108,7 @@ export class News extends Component {
                         incrementPageTwice={this.incrementPageTwice}
                         lastPage={Math.ceil(this.state.news.length/this.state.numNewsItems)}/>
             </div>
-            <Footer class="mt-5"/>
+            <Footer class="mt-5" min={700}/>
             </div>
         );
     }

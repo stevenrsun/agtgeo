@@ -29,7 +29,7 @@ export class WhyUs extends Component {
     render() { 
         return (  
             <React.Fragment>
-                <div class="container border border-grey">
+                <div class="container-fluid border border-grey" style={{width: '60vw', minWidth: 700}}>
                     <div class="row ml-4 mt-1 mr-3 mb-5">
                         <div class="col mr-2">
                             <h1 class="heading mt-5 ml-4" style={this.styles.header}>WHY AGT?</h1>
@@ -53,7 +53,7 @@ export class WhyUs extends Component {
                     </div>
                 </div>
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                <Footer/>
+                <Footer min={700}/>
             </React.Fragment>
         );
     }
