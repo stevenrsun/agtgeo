@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Switch, Link, NavLink} from "react-router-dom";
+import {HashRouter as Router, Route, Switch, Link, NavLink} from "react-router-dom";
 import logo from './images/logo.png';
 import navbar_top from './images/navbar_top.png';
 import {Home} from './pages/home.js';
@@ -15,6 +15,7 @@ import {WhyUs} from './pages/whyUs.js';
 import {Technology} from './pages/technology.js';
 import {TechnologyPage} from './pages/technologyPage.js';
 import {Contact} from './pages/contact.js';
+import {NotFound} from './pages/notFound.js';
 import './App.css';
 
 class NavBar extends Component {
@@ -50,11 +51,11 @@ class NavBar extends Component {
                           About
                         </button>
                         <div class="dropdown-menu pull-left" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item no-hover-underline" href="/About/Mission" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/Mission'}>Our Mission</Link></a>
-                          <a class="dropdown-item no-hover-underline" href="/About/Management" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/Management'}>Management Team</Link></a>
-                          <a class="dropdown-item no-hover-underline" href="/About/Markets" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/Markets'}>Markets Served</Link></a>
-                          <a class="dropdown-item no-hover-underline" href="/About/Partners" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/Partners'}>Partners</Link></a>
-                          <a class="dropdown-item no-hover-underline" href="/About/WhyUs" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/WhyUs'}>Why AGT?</Link></a>                        </div>
+                          <a class="dropdown-item no-hover-underline" href="#/About/Mission" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/Mission'}>Our Mission</Link></a>
+                          <a class="dropdown-item no-hover-underline" href="#/About/Management" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/Management'}>Management Team</Link></a>
+                          <a class="dropdown-item no-hover-underline" href="#/About/Markets" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/Markets'}>Markets Served</Link></a>
+                          <a class="dropdown-item no-hover-underline" href="#/About/Partners" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/Partners'}>Partners</Link></a>
+                          <a class="dropdown-item no-hover-underline" href="#/About/WhyUs" style={{fontSize: 15}}><Link class="no-hover-underline" to={'/About/WhyUs'}>Why AGT?</Link></a>                        </div>
                       </div></li>
                   <li class="heading"><NavLink to={'/Contact'} className="nav-link" style={this.styles.link}>Contact</NavLink></li>
                 </ul>
@@ -72,21 +73,22 @@ class NavBar extends Component {
                 return null;
             }}/>
             <Route exact path='/' component={Home}/>
-            <Route exact path='/News' component={News}/>
-            <Route exact path='/Services' component={Services}/>
-            <Route exact path='/Technology' component={Technology}/>
-            <Route exact path='/NewsPage' component={NewsPage}/>
-            <Route exact path='/NewsPage/:id' component={NewsPage}/>
-            <Route exact path='/ServicePage' component={ServicePage}/>
-            <Route exact path='/ServicePage/:id' component={ServicePage}/>
-            <Route exact path='/TechnologyPage' component={TechnologyPage}/>
-            <Route exact path='/TechnologyPage/:id' component={TechnologyPage}/>
-            <Route exact path='/About/Mission' component={Mission}/>
-            <Route exact path='/About/Management' component={Management}/>
-            <Route exact path='/About/Markets' component={Markets}/>
-            <Route exact path='/About/Partners' component={Partners}/>
-            <Route exact path='/About/WhyUs' component={WhyUs}/>
-            <Route exact path='/Contact' component={Contact}/>
+            <Route path='/News' component={News}/>
+            <Route path='/Services' component={Services}/>
+            <Route path='/Technology' component={Technology}/>
+            <Route path='/NewsPage' component={NewsPage}/>
+            <Route path='/NewsPage/:id' component={NewsPage}/>
+            <Route path='/ServicePage' component={ServicePage}/>
+            <Route path='/ServicePage/:id' component={ServicePage}/>
+            <Route path='/TechnologyPage' component={TechnologyPage}/>
+            <Route path='/TechnologyPage/:id' component={TechnologyPage}/>
+            <Route path='/About/Mission' component={Mission}/>
+            <Route path='/About/Management' component={Management}/>
+            <Route path='/About/Markets' component={Markets}/>
+            <Route path='/About/Partners' component={Partners}/>
+            <Route path='/About/WhyUs' component={WhyUs}/>
+            <Route path='/Contact' component={Contact}/>
+            <Route component={NotFound}/>
           </Switch>
         </div>
       </Router>
