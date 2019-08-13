@@ -33,13 +33,15 @@ export class Home extends Component {
         image: {
             width: '60vw',
             height: '60vh',
-            minWidth: 700
+            minWidth: 700,
+            maxHeight: 500
         },
         fade: {
             width: '60vw',
             height: '60vh',
             flexDirection: 'row',
-            minWidth: 700
+            minWidth: 700,
+            maxHeight: 500
         },
         blue: {
           color: '#1cb7e6',
@@ -96,7 +98,7 @@ export class Home extends Component {
             
            </div>
            
-           <Footer/>
+           <Footer min = {700}/>
           </React.Fragment>
         );
     }

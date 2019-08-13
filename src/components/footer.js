@@ -5,7 +5,7 @@ export class Footer extends Component {
     render() { 
         return ( 
             
-                <div id="footer" class="footer mt-3" style={{fontSize: 15, textAlign: 'center', color: 'white', backgroundColor: 'red'}}>
+                <div id="footer" class="footer mt-3" style={{minWidth: this.props.min, width: '100vw', fontSize: 15, textAlign: 'center', color: 'white', backgroundColor: 'red'}}>
                     
                     <span class="txt">info@agtgeo.com / Tel: 281.888.6789
                     &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 

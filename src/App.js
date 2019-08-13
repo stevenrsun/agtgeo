@@ -26,6 +26,7 @@ class NavBar extends Component {
     },
     image: {
       height: '8vh',
+      maxHeight: 50,
       width: '100vw'
     }
   }
@@ -39,7 +40,7 @@ class NavBar extends Component {
               <span class="navbar-toggler-icon"></span>
             </button>
             <NavLink to={'/'} className="nav-link" style={this.styles.link}>
-              <img src={logo} alt="Logo" className="mb-0 ml-3"/>
+              <img src={logo} alt="Logo" className="mb-0 ml-3" style={{width: '20vw', height: '8.04vw', maxWidth: 338, maxHeight: 136, minWidth: 169, minHeight: 68}}/>
             </NavLink>
             <div className="col mb-0">
               <br/><br/><br/>
