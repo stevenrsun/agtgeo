@@ -6,11 +6,11 @@ export class Management extends Component {
 
     styles = {
         header: {
-            color: 'red',
+            color: '#EE3124',
             fontSize: 35
         },
         subheader: {
-            color: 'red',
+            color: '#EE3124',
             fontSize: 25
         },
         bold: {
@@ -18,11 +18,11 @@ export class Management extends Component {
             fontSize: 19
         },
         blue: {
-            color: '#1cb7e6',
+            color: '#00ACD4',
             fontSize: 50
         },
         blueSmall: {
-            color: '#1cb7e6',
+            color: '#00ACD4',
             fontSize: 20
         },
         small: {
@@ -66,7 +66,7 @@ export class Management extends Component {
                         <div class="mt-1">
                             <span class="txt subheading" style={this.styles.small}>Rob has provided seismic imaging services and software solutions to the oil service industry for more than 33 years. His broad experience base ranges from managing divisions within publicly traded oil service companies to leading small, entrepreneurial privately held seismic imaging companies. <br/><br/>
 
-                            Rob began his career in Calgary with Veritas in 1981 before moving to the U.S., where he led the Veritas seismic processing group’s entry into the U.S. market in 1993. He subsequently served as Vice President of Seismic Services for ADS in 2001 before Core Lab’s purchase of ADS, and President of Core Lab’s Reservoir Technology Division. He also served as President of the U.S. division of Paradigm Geophysical and CEO of 3DGEO. Rob attended Acadia University, Nova Scotia, Canada from 1979-1981, where he majored in Computer Science.</span>
+                            Rob began his career in Calgary with Veritas in 1981 before moving to the U.S., where he led the Veritas seismic processing group’s entry into the U.S. market in 1993. He subsequently served as Vice President of Seismic Services for ADS in 2001 before Core Lab’s purchase of ADS, and President of Core Lab’s Reservoir Technology Division. He also served as President of the U.S. division of Paradigm Geophysical and CEO of 3DGEO. Rob attended Acadia University, Nova Scotia, Canada from 1979-1981, where he majo#EE3124 in Computer Science.</span>
                         </div>
                         <div class="mt-2">
                             <span class="txt nav-text" style={this.styles.bold}>LIJIAN TAN, PH.D. </span>
@@ -76,9 +76,9 @@ export class Management extends Component {
                         <div class="mt-1">
                             <span class="txt subheading" style={this.styles.small}>Since co-founding AGT in 2010, Lijan has led the successful development of innovative seismic forward modeling technology, Reverse Time Migration (RTM) and angle gather output technologies. He has also served as project lead for much of AGT’s custom forward modeling work and RTM service projects.<br/><br/>
 
-                            Between 2007 and 2010 Lijian explored FWI technology as a Senior Research Engineer at ExxonMobil. He earned a Ph.D. degree from Cornell University in 2007 in Mechanical & Aerospace Engineering, with a minor in Computer Science in 2007.<br/><br/>
+                            Between 2007 and 2010 Lijian explo#EE3124 FWI technology as a Senior Research Engineer at ExxonMobil. He earned a Ph.D. degree from Cornell University in 2007 in Mechanical & Aerospace Engineering, with a minor in Computer Science in 2007.<br/><br/>
 
-                            Lijian is first author of a pending patent for implementation of seismic modeling and reverse time migration on GPU hardware, entitled “Method and System to Reduce: Memory Requirements, Device-to-Host Transfer Bandwidth Requirements, and Setup Time, for Seismic Modeling on Graphics Processing Units” (Application number: 20120203523). He is also first author of a patent for efficient computation of adjoint gradient for full wave inversion, entitled, “Method and System for Checkpointing During Simulations” (Patent number: 8756042).</span>
+                            Lijian is first author of a pending patent for implementation of seismic modeling and reverse time migration on GPU hardware, entitled “Method and System to #EE3124uce: Memory Requirements, Device-to-Host Transfer Bandwidth Requirements, and Setup Time, for Seismic Modeling on Graphics Processing Units” (Application number: 20120203523). He is also first author of a patent for efficient computation of adjoint gradient for full wave inversion, entitled, “Method and System for Checkpointing During Simulations” (Patent number: 8756042).</span>
                         </div>
                         <div class="mt-2">
                             <span class="txt nav-text" style={this.styles.bold}>XIJING LIAN </span>

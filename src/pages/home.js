@@ -44,7 +44,7 @@ export class Home extends Component {
             maxHeight: 500
         },
         blue: {
-          color: '#1cb7e6',
+          color: '#00ACD4',
           fontSize: 25
         },
         link: {

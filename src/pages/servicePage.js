@@ -14,7 +14,7 @@ export class ServicePage extends Component {
     styles = {
         header: {
             fontSize: 60,
-            color: 'red'
+            color: '#EE3124'
         },
 
         body:{

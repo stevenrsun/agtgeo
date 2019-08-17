@@ -15,7 +15,7 @@ export class NewsPage extends Component {
         return ( 
             <React.Fragment>
             <div class="text-center">
-                <h1 class="display-1">{this.state.info['title']}</h1>
+                <h1 class="heading" style={{color: '#EE3124'}}>{this.state.info['title']}</h1>
             </div>
             <div class="text-left ml-5">
                 <p>{this.state.info['text']}</p>

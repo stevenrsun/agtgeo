@@ -6,18 +6,18 @@ export class Mission extends Component {
 
     styles = {
         header: {
-            color: 'red',
+            color: '#EE3124',
             fontSize: 35
         },
         subheader: {
-            color: 'red',
+            color: '#EE3124',
             fontSize: 25
         },
         bold: {
             fontWeight: 'bold'
         },
         blue: {
-            color: '#1cb7e6',
+            color: '#00ACD4',
             fontSize: 50
         }
     }

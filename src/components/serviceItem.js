@@ -18,7 +18,7 @@ export class ServiceItem extends Component {
         return (  
             <div className="card border-white">
                 <div className="card-body">
-                    <h5 class="card-title heading" style={{color: 'red'}}>{this.props.info['title']}</h5>
+                    <h5 class="card-title heading" style={{color: '#EE3124'}}>{this.props.info['title']}</h5>
                     {cardInfo}
                     <Link to={{pathname: ('/ServicePage/' + this.props.info['id']), state:{info: this.props.info}}}>See more</Link>
                 </div>

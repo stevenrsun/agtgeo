@@ -1,10 +1,10 @@
 .active a{
-	background: red !important;
-	border: red
+	background: #EE3124 !important;
+	border: #EE3124
 }
 
 .pagination a{
-	color: red
+	color: #EE3124;
 }
 
 
@@ -12,7 +12,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: #EE3124;
   color: white;
   text-align: center;
   overflow: hidden;
@@ -161,7 +161,7 @@ ul {
 
 ul.list-group li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #1cb7e6; /* Change the color */
+  color: #00ACD4; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */

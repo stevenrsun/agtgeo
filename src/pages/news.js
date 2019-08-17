@@ -89,12 +89,12 @@ export class News extends Component {
                 <div class="row">
                     <div class="col-2 border-right text-center">
                         <br/>
-                        <Link class="heading" onClick={this.reset} style={{fontSize: 25, fontWeight: 'bold', color: '#1cb7e6'}}>All News</Link><br/>
+                        <Link class="heading" onClick={this.reset} style={{fontSize: 25, fontWeight: 'bold', color: '#00ACD4'}}>All News</Link><br/>
                         <Link class="subheading" onClick={() => this.applyFilter(2019)} style={{fontSize: 20, color: 'black'}}>2019-2020</Link><br/>
                         <Link class="subheading" onClick={() => this.applyFilter(2018)} style={{fontSize: 20, color: 'black'}}>2018-2019</Link><br/>
                     </div>
                     <div class="col">
-                        <h1 class="heading ml-2 mt-1" style={{fontSize: 35, color: '#585c5e'}}>LATEST NEWS</h1>
+                        <h1 class="heading ml-2 mt-1" style={{fontSize: 35, color: '#5F6062'}}>LATEST NEWS</h1>
                         {newsFormatted}
                     </div>
                 </div>
@@ -106,7 +106,8 @@ export class News extends Component {
                         goLastPage={this.goLastPage}
                         page={this.state.page}
                         incrementPageTwice={this.incrementPageTwice}
-                        lastPage={Math.ceil(this.state.news.length/this.state.numNewsItems)}/>
+                        lastPage={Math.ceil(this.state.news.length/this.state.numNewsItems)}
+                        href='/#/News'/>
             </div>
             <Footer class="mt-5" min={700}/>
             </div>

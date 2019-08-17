@@ -11,11 +11,11 @@ export class Contact extends Component {
 
     styles = {
         header: {
-            color: 'red',
+            color: '#EE3124',
             fontSize: 35
         },
         subheader: {
-            color: 'red',
+            color: '#EE3124',
             fontSize: 25
         },
         bold: {

@@ -75,18 +75,18 @@ export class Markets extends Component {
 
     styles = {
         header: {
-            color: 'red',
+            color: '#EE3124',
             fontSize: 35
         },
         subheader: {
-            color: 'red',
+            color: '#EE3124',
             fontSize: 25
         },
         bold: {
             fontWeight: 'bold'
         },
         blue: {
-            color: '#1cb7e6',
+            color: '#00ACD4',
             fontSize: 50
         }
     }
@@ -142,7 +142,7 @@ export class Markets extends Component {
                         <img class="ml-4 pinpoint8" id={7} title={this.state.t8} info={this.state.i8} src={this.state.pinpoint[7]} alt="pinpoint_red8"
                             onMouseOver={this.onHover} onMouseOut={this.onExit}/> 
                         {this.state.hover ? (<div class="labelbox">
-                            <h4 class="heading" style={{color: 'red'}}>{this.state.title}</h4>
+                            <h4 class="heading" style={{color: '#EE3124'}}>{this.state.title}</h4>
                             <p class="subheading">{this.state.info}</p>
                         </div>):null}
                     </div>

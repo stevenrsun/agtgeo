@@ -7,9 +7,8 @@ export class NewsItem extends Component {
         return ( 
             <div className="card border-white">
                 <div className="card-body">
-                    <h5 class="card-title heading" style={{color: 'red'}}>{this.props.info['title']}</h5>
+                    <h5 class="card-title heading" style={{color: '#EE3124'}}>{this.props.info['title']}</h5>
                     <p class="subheading card-text">{this.props.info['text']}</p>
-                    <Link to={{pathname: ('/NewsPage/' + this.props.info['id']), state:{info: this.props.info}}}>See more</Link>
                 </div>
             </div>
         );
