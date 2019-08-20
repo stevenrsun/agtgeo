@@ -11,7 +11,7 @@ export class Technology extends Component {
         technology: [
             {title: 'ADVANCED FORWARD MODELING TECHNOLOGY', 
             list: [
-                {link: true, title: 'Forward Modeling',
+                {link: true, title: 'Low GPU-memory requirement (Patented)',
                 list: [
                     'AGT’s unique Forward Modeling technology is the “gold standard” in the oil/gas industry',
                     'GPU based efficient implementation',
@@ -31,7 +31,6 @@ export class Technology extends Component {
                 ],
                 body: []
                 },
-                {link: false, title: 'Low GPU-memory requirement (Patented)'},
                 {link: false, title: 'Acoustic/elastic'},
                 {link: false, title: 'Anisotropic'},
                 {link: false, title: 'Finite Element'},
@@ -56,7 +55,6 @@ export class Technology extends Component {
                 ],
                 body: []
                 },
-                {link: false, title: 'Q model building'},
                 {link: true, title: 'FWI (Patented)',
                 list:[
                     'Immune to cycle-skipping phenomenon even without low frequency data – Beat Tone FWI (patented)',
@@ -324,7 +322,7 @@ export class Technology extends Component {
     }
 
     goLastPage = () => {
-        const page = Math.ceil(this.state.technology.length/this.state.numTechItems) - 1;
+        const page = this.state.filter === 'tech' ? Math.ceil(this.state.technology.length/this.state.numTechItems) : Math.ceil(this.state.publications.length/this.state.numPubItems) - 1;
         this.setState({page});
     }
 

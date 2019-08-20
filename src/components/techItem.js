@@ -10,7 +10,7 @@ export class TechnologyItem extends Component {
             if(this.props.info.list[i]['link'])
                 temp.push(
                 <li class="list-group-item subheading border border-white py-0">
-                    <Link to={{pathname: ('/TechnologyPage/' + this.props.info.list[i]['id']), state:{info: this.props.info.list[i]}}}>{this.props.info.list[i]['title']}</Link>
+                    <Link to={{pathname: ('/TechnologyPage/' + this.props.info.list[i]['title'].replace(/\s/g, '')), state:{info: this.props.info.list[i]}}}>{this.props.info.list[i]['title']}</Link>
                 </li>);
             else
                 temp.push(
