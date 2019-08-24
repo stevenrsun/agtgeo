@@ -64,7 +64,7 @@ export class Mission extends Component {
                         </div>
                     </div>
                     <div class="col-2 mr-5">
-                        <img src={require("../images/mission-timeline2017.png")} alt="timeline"/>
+                        <img src={require("../images/mission-timeline2017.png")} alt="timeline" style={{maxWidth: '376px', width: '20vw'}}/>
                     </div>
                 </div>
             </div>

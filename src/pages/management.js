@@ -71,14 +71,23 @@ export class Management extends Component {
                         <div class="mt-2">
                             <span class="txt nav-text" style={this.styles.bold}>LIJIAN TAN, PH.D. </span>
                             <span class="txt heading-2" style={this.styles.blueSmall}>></span>
-                            <span class="txt nav-text" style={{fontSize: 19}}> VP: FM &#038; RTM</span>
+                            <span class="txt nav-text" style={{fontSize: 19}}> PRESIDENT &#038; CHIEF TECHNOLOGY OFFICER</span>
                         </div>
                         <div class="mt-1">
-                            <span class="txt subheading" style={this.styles.small}>Since co-founding AGT in 2010, Lijan has led the successful development of innovative seismic forward modeling technology, Reverse Time Migration (RTM) and angle gather output technologies. He has also served as project lead for much of AGT’s custom forward modeling work and RTM service projects.<br/><br/>
-
-                            Between 2007 and 2010 Lijian explo#EE3124 FWI technology as a Senior Research Engineer at ExxonMobil. He earned a Ph.D. degree from Cornell University in 2007 in Mechanical & Aerospace Engineering, with a minor in Computer Science in 2007.<br/><br/>
-
-                            Lijian is first author of a pending patent for implementation of seismic modeling and reverse time migration on GPU hardware, entitled “Method and System to #EE3124uce: Memory Requirements, Device-to-Host Transfer Bandwidth Requirements, and Setup Time, for Seismic Modeling on Graphics Processing Units” (Application number: 20120203523). He is also first author of a patent for efficient computation of adjoint gradient for full wave inversion, entitled, “Method and System for Checkpointing During Simulations” (Patent number: 8756042).</span>
+                            <span class="txt subheading" style={this.styles.small}>Since co-founding AGT in 2010, Lijian is in charge of the development
+                                and application of innovative seismic forward modeling technology,
+                                Reverse Time Migration (RTM) and angle gather output technologies.
+                                These efforts have established AGT's status as an industry leader in
+                                seismic forward modeling. Lijian has also successfully led the
+                                development of AGT's Kirchhoff migration implementation on GPU
+                                hardware, designed the framework of AGT's proprietary time processing
+                                package and played a key role in development and application of the
+                                underlying modules. <br/> <br/>
+                                Since 2018, Lijian has been serving as the
+                                President of AGT. Prior to Lijian's time with AGT, Lijian explored FWI
+                                technology as a Senior Research Engineer at ExxonMobil between 2007
+                                and 2010. He earned a Ph.D. degree from Cornell University in 2007 in
+                                Mechanical &#038; Aerospace Engineering, with a minor in Computer Science.</span>
                         </div>
                         <div class="mt-2">
                             <span class="txt nav-text" style={this.styles.bold}>XIJING LIAN </span>
