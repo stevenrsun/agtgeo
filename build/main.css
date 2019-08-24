@@ -1,0 +1,176 @@
+.active a{
+	background: #EE3124 !important;
+	border: #EE3124
+}
+
+.pagination a{
+	color: #EE3124;
+}
+
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #EE3124;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card {
+	overflow: hidden;
+}
+
+#root {
+	width: 100vw;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none !important;
+}
+
+.dropdown { padding-top: 1px !important;}
+
+.no-hover-underline .no-hover-underline:hover{
+	text-decoration: none !important;
+	color: grey;
+}
+
+.no-hover-underline {
+	color: #465057;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.heading {
+  font-family: 'Blinker', sans-serif;
+  font-weight: 700 !important;
+}
+
+.heading-2 {
+  font-family: 'Blinker', sans-serif;
+  vertical-align: middle;
+  padding-bottom: 6px;
+}
+
+.heading-3 {
+  font-family: 'Blinker', sans-serif;
+  vertical-align: middle !important;
+  font-weight: 700;
+}
+
+.heading-4 {
+  font-family: 'Blinker', sans-serif;
+  font-style: italic;
+}
+
+.nav-text {
+  font-family: 'Blinker', sans-serif;
+	font-weight: 300;
+}
+
+.subheading {
+  font-weight: 300 !important;
+  font-family: 'Raleway', sans-serif;
+}
+
+.subheading-bold {
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+}
+
+.card-text {
+  font-family: 'Raleway', sans-serif;
+}
+
+.card-title {
+  font-family: 'Blinker', sans-serif;
+}
+
+.container{
+	position: relative;
+}
+
+.pinpoint1{
+	position: absolute;
+	left:168px;
+	top:273px;
+}
+
+.labelbox{
+	position: absolute;
+	left:-35px;
+	top:395px;
+	width: 300px;
+}
+
+
+.pinpoint2{
+	position: absolute;
+	left:180px;
+	top:303px;
+}
+
+.pinpoint3{
+	position: absolute;
+	left:198px;
+	top:316px;
+}
+
+.pinpoint4{
+	position: absolute;
+	left:218px;
+	top:329px;
+}
+
+.pinpoint5{
+	position: absolute;
+	left:385px;
+	top:338px;
+}
+
+.pinpoint6{
+	position: absolute;
+	left:444.5px;
+	top:420px;
+}
+
+.pinpoint7{
+	position: absolute;
+	left:712.5px;
+	top:280px;
+}
+
+.pinpoint8{
+	position: absolute;
+	left:744px;
+	top:444.5px;
+}
+
+.container{
+		max-width: '1920px';
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul.list-group li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #00ACD4; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+    margin-right: 0;
+    margin-left: 0;
+}

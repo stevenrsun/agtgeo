@@ -107,7 +107,7 @@ export class Management extends Component {
                         <div class="mt-2">
                             <span class="txt nav-text" style={this.styles.bold}>J. JERRY YUAN, PH.D. </span>
                             <span class="txt heading-2" style={this.styles.blueSmall}>></span>
-                            <span class="txt nav-text" style={{fontSize: 19}}> PRESIDENT: VELOCITY MODEL BUILDING</span>
+                            <span class="txt nav-text" style={{fontSize: 19}}> VP: VELOCITY MODEL BUILDING</span>
                         </div>
                         <div class="mt-1">
                             <span class="txt subheading" style={this.styles.small}>Since joining AGT in 2012, Jerry has focused on velocity model building in isotropic/anisotropic media, mainly through automatic moveout picking, ray tracing and tomographic inversion.<br/><br/>
