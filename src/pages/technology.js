@@ -261,7 +261,7 @@ export class Technology extends Component {
             link: process.env.PUBLIC_URL + '/P17-SEG2019_Zhou_et_al_Broadband_TTI-QRTM.pdf'},
         ], // publications
         numTechItems: 8, // number of tech entries to be displayed per page
-        numPubItems: 10,
+        numPubItems: 50,
         page: 0,
         title: 'TECHNOLOGIES',
         filter: 'tech'

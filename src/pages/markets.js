@@ -124,22 +124,22 @@ export class Markets extends Component {
                 </div>
                 <div class="row ml-5 mt-5 mb-5">
                     <div class = "container mb-3">
-                        <img class="ml-4" src={require("../images/market-global-map.png")} alt="market-map"/>
-                        <img class="ml-4 pinpoint1" id={0} title={this.state.t1} info={this.state.i1} src={this.state.pinpoint[0]} alt="pinpoint_red1"
+                        <img class="m-1" src={require("../images/market-global-map.png")} alt="market-map"/>
+                        <img class="m-1 pinpoint1" id={0} title={this.state.t1} info={this.state.i1} src={this.state.pinpoint[0]} alt="pinpoint_red1"
                             onMouseOver={this.onHover} onMouseOut={this.onExit}/> 
-                        <img class="ml-4 pinpoint2" id={1} title={this.state.t2} info={this.state.i2} src={this.state.pinpoint[1]} alt="pinpoint_red2"
+                        <img class="m-1 pinpoint2" id={1} title={this.state.t2} info={this.state.i2} src={this.state.pinpoint[1]} alt="pinpoint_red2"
                             onMouseOver={this.onHover} onMouseOut={this.onExit}/> 
-                        <img class="ml-4 pinpoint3" id={2} title={this.state.t3} info={this.state.i3} src={this.state.pinpoint[2]} alt="pinpoint_red3"
+                        <img class="m-1 pinpoint3" id={2} title={this.state.t3} info={this.state.i3} src={this.state.pinpoint[2]} alt="pinpoint_red3"
                             onMouseOver={this.onHover} onMouseOut={this.onExit}/> 
-                        <img class="ml-4 pinpoint4" id={3} title={this.state.t4} info={this.state.i4} src={this.state.pinpoint[3]} alt="pinpoint_red4"
+                        <img class="m-1 pinpoint4" id={3} title={this.state.t4} info={this.state.i4} src={this.state.pinpoint[3]} alt="pinpoint_red4"
                             onMouseOver={this.onHover} onMouseOut={this.onExit}/> 
-                        <img class="ml-4 pinpoint5" id={4} title={this.state.t5} info={this.state.i5} src={this.state.pinpoint[4]} alt="pinpoint_red5"
+                        <img class="m-1 pinpoint5" id={4} title={this.state.t5} info={this.state.i5} src={this.state.pinpoint[4]} alt="pinpoint_red5"
                             onMouseOver={this.onHover} onMouseOut={this.onExit}/> 
-                        <img class="ml-4 pinpoint6" id={5} title={this.state.t6} info={this.state.i6} src={this.state.pinpoint[5]} alt="pinpoint_red6"
+                        <img class="m-1 pinpoint6" id={5} title={this.state.t6} info={this.state.i6} src={this.state.pinpoint[5]} alt="pinpoint_red6"
                             onMouseOver={this.onHover} onMouseOut={this.onExit}/> 
-                        <img class="ml-4 pinpoint7" id={6} title={this.state.t7} info={this.state.i7} src={this.state.pinpoint[6]} alt="pinpoint_red7"
+                        <img class="m-1 pinpoint7" id={6} title={this.state.t7} info={this.state.i7} src={this.state.pinpoint[6]} alt="pinpoint_red7"
                             onMouseOver={this.onHover} onMouseOut={this.onExit}/> 
-                        <img class="ml-4 pinpoint8" id={7} title={this.state.t8} info={this.state.i8} src={this.state.pinpoint[7]} alt="pinpoint_red8"
+                        <img class="m-1 pinpoint8" id={7} title={this.state.t8} info={this.state.i8} src={this.state.pinpoint[7]} alt="pinpoint_red8"
                             onMouseOver={this.onHover} onMouseOut={this.onExit}/> 
                         {this.state.hover ? (<div class="labelbox">
                             <h4 class="heading" style={{color: '#EE3124'}}>{this.state.title}</h4>
