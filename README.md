@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+-------------------------------
+FOR AGT GEO EMPLOYEES:
+
+npm start - to run local client
+npm run build - to build project, rename the build folder and move to ftp://agtgeo.com and use ipage pointer towards new folder
+
+IF NPM START DOESNT WORK
+-happens when switching between OS's, delete node_modules folder and package-lock.json file, then in agtgeo directory,
+in terminal, type "npm install", should fix the issue
+
+-------------------------------
+
 ## Available Scripts
 
 In the project directory, you can run:
