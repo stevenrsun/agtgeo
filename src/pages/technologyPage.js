@@ -10,32 +10,33 @@ export class TechnologyPage extends Component {
         technology: [
             {title: 'ADVANCED FORWARD MODELING TECHNOLOGY', 
             list: [
-                {link: true, title: 'Low GPU-memory requirement (Patented)',
-                list: [
-                    'AGT’s unique Forward Modeling technology is the “gold standard” in the oil/gas industry',
-                    'GPU based efficient implementation',
-                    'Low GPU-memory requirement (Patented)',
-                    'Acoustic and elastic',
-                    'Anisotropic – VTI, TTI, Orthorhombic or arbitrary anisotropic',
-                    'Finite element based commercial implementation for extremely large projects',
-                    'Arbitrary surface / seafloor / horizon topography',
-                    'Variable grid for further efficiency boost',
-                    'Wide variety of acquisition types – land (dynamite, vibroseis), marine (streamer, nodal), VSP / Sea-Floor multi-component recording',
-                    'Reverse shooting based on rigorously validated numerical reciprocity',
-                    '3D acquisition design based on AGT advanced modeling technology'
-                ],
-                images: [
-                    {image: require('../images/techInstances/forward_modeling_1.png'), caption: 'SEAM Arid Model'},
-                    {image: require('../images/techInstances/forward_modeling_2.png'), caption: 'Modeling-aided 3D acquisition design: optimally weight node/receiver/shot contribution'}
-                ],
-                body: []
-                },
+                {link: false, title: 'Low GPU-memory requirement (Patented)'},
                 {link: false, title: 'Acoustic/elastic'},
                 {link: false, title: 'Anisotropic'},
                 {link: false, title: 'Finite Element'},
                 {link: false, title: 'Arbritrary topography'},
                 {link: false, title: 'All Acquisition Types'},
                 {link: false, title: 'Survey Design'},
+                {link: true, title: 'ADVANCED FORWARD MODELING TECHNOLOGY',
+                    list: [
+                        'AGT’s unique Forward Modeling technology is the “gold standard” in the oil/gas industry',
+                        'GPU based efficient implementation',
+                        'Low GPU-memory requirement (Patented)',
+                        'Acoustic and elastic',
+                        'Anisotropic – VTI, TTI, Orthorhombic or arbitrary anisotropic',
+                        'Finite element based commercial implementation for extremely large projects',
+                        'Arbitrary surface / seafloor / horizon topography',
+                        'Variable grid for further efficiency boost',
+                        'Wide variety of acquisition types – land (dynamite, vibroseis), marine (streamer, nodal), VSP / Sea-Floor multi-component recording',
+                        'Reverse shooting based on rigorously validated numerical reciprocity',
+                        '3D acquisition design based on AGT advanced modeling technology'
+                    ],
+                    images: [
+                        {image: require('../images/techInstances/forward_modeling_1.png'), caption: 'SEAM Arid Model'},
+                        {image: require('../images/techInstances/forward_modeling_2.png'), caption: 'Modeling-aided 3D acquisition design: optimally weight node/receiver/shot contribution'}
+                    ],
+                    body: []
+                 },
             ]},
             {title: 'MODEL BUILDING TECHNOLOGY',
             list: [
